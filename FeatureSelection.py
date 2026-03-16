@@ -16,7 +16,7 @@ def NearestNeighbor(data, features_to_evaluate):
       if k != i:
         next_obj = data[k]
         distance = 0
-        for j in features_to_evaluate: # Get Euclidean Distance for the features being evaluated
+        for j in features_to_evaluate: # Get Distance for the features being evaluated
           distance += (curr_obj[j] - next_obj[j])**2
           if distance > nearest_neighbor_distance: # Early abandon if distance is already bigger
             break
